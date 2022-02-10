@@ -99,6 +99,7 @@ function atualuzarErrodeLetras() {
 
 //mostrar notificação
 function mostraNotificacao() {
+  notificacao.style.display ="block"
   notificacao.classList.add('show')
   setTimeout(()=> {
     notificacao.classList.remove('show')

@@ -137,13 +137,13 @@ h1 {
   position: absolute;
   bottom: -50px;
   transition: transform 0.3s ease-in-out;
+  display:none;
 }
 .conteiner-notificao p {
   margin: 0;
 }
 .conteiner-notificao.show {
   transform: translatey(-100px);
-  z-index: 1;
 }
 .erro{
   
