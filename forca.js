@@ -17,7 +17,8 @@ botao.addEventListener("click", (event) =>{
   palavraAdionada = document.querySelector('#input-nova-palavra');
   
 console.log(palavras);
- palavras.push(palavraAdionada.value.toLowerCase());
+palavraSemEspaco = palavraAdionada.value.replaceAll(/[^a-z ç]/ig, "");
+ palavras.push(palavraSemEspaco.toLowerCase());
 console.log(palavras);
   palavraAdionada.value = "";
 
