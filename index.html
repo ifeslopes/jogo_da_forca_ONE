@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <div class="titulo" style="text-align:center; margin: 50px 0px;">
+      <h1>Jogo da Forca</h1>
+      <button class="btn" id="iniciar-jogo">INICIAR JOGO</button>
+    </div>
+    <div style="text-align:center">
+      <input class="text-input" type="text" id="input-nova-palavra" placeholder="   Nova palavra">
+      <button class="btn" id="nova-palavra">ADICIONAR PALAVRA</button> 
+    </div>
+<div class="contener-jogo" >
+  <svg height="250" width="200" class="contener-figura">
+    <!--Rod-->
+    <line x1="60" y1="20" x2="140" y2="20"/>
+    <line x1="140" y1="20" x2="140" y2="50"/>
+    <line x1="60" y1="20" x2="60" y2="230"/>
+    <line x1="20" y1="230" x2="100" y2="230"/>
+  
+    <!--Head-->
+    <circle cx="140" cy="70" r="20" class="parte-figura" />
+    <!--Body-->
+    <line x1="140" y1="90" x2="140" y2="150"
+     class="parte-figura" />
+    <!--Arma-->
+    <line x1="140" y1="120" x2="120" y2="100" 
+ class="parte-figura" />
+    <line x1="140" y1="120" x2="160" y2="100"
+ class="parte-figura" />
+    <!--Legs-->
+    <line x1="140" y1="150" x2="120" y2="180" 
+ class="parte-figura" />
+    <line x1="140" y1="150" x2="160" y2="180"
+ class="parte-figura"/>
+ 
+  </svg>
+ <div class="worg-letter-conteiner">
+  <div id="wrong-letter"></div>
+ </div>
+<div class="word" id="word"></div>
+
+
+</div>
+    <!--Contenier Messagens Final-->
+   <div class="poup-conteiner" id="poup-conteiner">
+    <div class="popup">
+      <h2 id="messagem-final"></h2>
+      <button id="play-botton">Jogar Novamente</button>
+      
+      
+    </div>
+   </div>
+    <!--Notificações-->
+   <div class="conteiner-notificao" id="conteiner-notificao">
+     <p>Você já utilizou está letra tente outra. </p>
+     
+     
+   </div>
+ 
+   <div>
+  <form action="" method="post">
+  
+ <div class="classeTeclado">
+<fieldset id="teclado">
+
+<fieldset>
+<input type="button" name="q" value="q" />
+<input type="button" name="w" value="w" />
+<input type="button" name="e" value="e" />
+<input type="button" name="r" value="r" />
+<input type="button" name="t" value="t" />
+<input type="button" name="y" value="y" />
+<input type="button" name="u" value="u" />
+<input type="button" name="i" value="i" />
+<input type="button" name="o" value="o" />
+<input type="button" name="p" value="p" />
+</fieldset>
+<fieldset>
+<input type="button" name="a" value="a" />
+<input type="button" name="s" value="s" />
+<input type="button" name="d" value="d" />
+<input type="button" name="f" value="f" />
+<input type="button" name="g" value="g" />
+<input type="button" name="h" value="h" />
+<input type="button" name="j" value="j" />
+<input type="button" name="k" value="k" />
+<input type="button" name="l" value="l" />
+<input type="button" name="ç" value="ç" />
+</fieldset>
+<fieldset>
+<input type="button" name="z" value="z" />
+<input type="button" name="x" value="x" />
+<input type="button" name="c" value="c" />
+<input type="button" name="v" value="v" />
+<input type="button" name="b" value="b" />
+<input type="button" name="n" value="n" />
+<input type="button" name="m" value="m" />
+</fieldset>
+</fieldset>
+</div>
+</form>
+   </div>
+
+<footer>
+  Leonardo Lopes @2022
+</footer>
+  
+    <script type="text/javascript" src="canvas.js"></script>
+    <script type="text/javascript" src="sons.js"></script>
+    <script type="text/javascript" src="forca.js"></script>
+  </body>
+</html>
