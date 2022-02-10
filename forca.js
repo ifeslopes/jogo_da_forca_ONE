@@ -9,7 +9,7 @@ const parteFiguras = document.querySelectorAll('.parte-figura');
 
 const botao = document.querySelector('#nova-palavra');
 
-const palavras = ['aulura','oracle'];
+const palavras = ['alura','oracle'];
 let selecionarPalavra;
 //adionar palavra 
 botao.addEventListener("click", (event) =>{
